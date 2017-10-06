@@ -27,12 +27,12 @@ config.plugins = config.plugins.concat([
   new webpack.optimize.DedupePlugin(),
 
   // Extract CSS to a different file, will require additional configuration.
-  new ExtractTextPlugin('auth0-logs-to-google-cloud.ui.' + project.version + '.css', {
+  new ExtractTextPlugin('auth0-logs-to-sumologic.ui.' + project.version + '.css', {
     allChunks: true
   }),
 
   // Separate the vender in a different file.
-  new webpack.optimize.CommonsChunkPlugin('vendors', 'auth0-logs-to-google-cloud.ui.vendors.' + project.version + '.js'),
+  new webpack.optimize.CommonsChunkPlugin('vendors', 'auth0-logs-to-sumologic.ui.vendors.' + project.version + '.js'),
 
   // Compress and uglify the output.
   new webpack.optimize.UglifyJsPlugin({

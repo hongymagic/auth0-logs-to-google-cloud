@@ -1,7 +1,7 @@
 {
   "title": "Auth0 Logs to Google Cloud",
   "name": "auth0-logs-to-google-cloud",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "author": "hongymagic",
   "description": "This extension will take all of your Auth0 logs and export them to Google Cloud",
   "type": "cron",
